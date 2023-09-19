@@ -1,3 +1,8 @@
+// This test is a basic happy path created to understand the functionality of Asana
+// since it's an unfamilar site to me. It aids in my understanding of how I will 
+// develop a readable and maintainable test for you. 
+
+
 const { test, expect } =require('@playwright/test')
 
 // Test data in JSON format
