@@ -1,6 +1,6 @@
-// asanadatadriven was created as the first data-driven test with (asanatest)
-// Although this test is efficient, depending on the client, the data driven
-// part of this test may not be as readable to a less tech savvy client. 
+// asanadatadriven was created as the first data-driven test after creating
+// asanatest. Although this test is efficient, depending on the client, the 
+// data driven part of this test may not be as readable to a less tech savvy client. 
   
 
 const { test, expect } = require('@playwright/test');
