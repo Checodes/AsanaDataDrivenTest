@@ -1,5 +1,5 @@
-// asanadatadriven2 was created to make the test more maintainable and readable
-// Depending on the client, this may be preferred
+// asanadatadriven2 was created after asanadatadriven to make the test more maintainable 
+// and readable to all. 
 
 const { test, expect } = require('@playwright/test');
 
