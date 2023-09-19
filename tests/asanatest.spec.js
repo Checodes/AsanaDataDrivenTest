@@ -77,45 +77,63 @@ const testCases = [
 
 
 test('testCase1', async ({ page }) => {
+    // Navigate to Cross-functional project plan, Project
     await page.getByLabel('Cross-functional project plan, Project');
+    // Validate Draft project brief is in the To Do column
     await page.getByRole('heading', { name: 'To do' });
     await page.getByText('Draft project brief');
+    // Confirm tags: Low and On track
     await page.getByText('LowOn track');
   });
 
 test('testCase2', async ({ page }) => {
+    // Navigate to Cross-functional project plan, Project
     await page.getByLabel('Cross-functional project plan, Project');
+    // Validate Schedule kickoff meeting is in the To Do column
     await page.getByRole('heading', { name: 'To do' });
     await page.getByText('Schedule kickoff meeting');
+    // Confirm tags: Medium and At risk
     await page.getByText('MediumAt risk');
  });
 
 
 test('testCase3', async ({ page }) => {
+     // Navigate to Cross-functional project plan, Project.
     await page.getByLabel('Cross-functional project plan, Project');
+    // Validate Share timeline with teammates is in the To Do column.
     await page.getByRole('heading', { name: 'To do' });
     await page.getByText('Share timeline with teammates');
+    // Confirm tags: High and Off track.
     await page.getByText('HighOff track');
   });
 
   test('testCase4', async ({ page }) => {
+    // Navigate to Work Requests.
     await page.getByLabel('Work Requests, Project');
+    // Validate [Example] Laptop setup for new hire is in the New Requests column.
     await page.getByRole('heading', { name: 'New Requests' })
     await page.getByText('[Example] Laptop setup for new hire');
+    // Confirm tags: Medium priority, Low effort, New hardware, and Not Started.
     await page.getByText('Medium priorityLow effortNew hardwareNot Started');
 });
   
 test('testCase5', async ({ page }) => {
+    // Navigate to Work Requests.
     await page.getByLabel('Work Requests, Project');
+    // Validate [Example] Password not working is in the In Progress column.
     await page.getByRole('heading', { name: 'In Progress' })
     await page.getByText('[Example] Password not working')
+    // Confirm tags: Low priority, Low effort, Password reset, and Waiting.
     await page.getByText('Low priorityLow effortPassword resetWaiting');
 });
 
 test('testCase6', async ({ page }) => {
+    // Navigate to Work Requests.
     await page.getByLabel('Work Requests, Project');
+    // Validate [Example] New keycard for Daniela V is in the Completed column.
     await page.getByRole('heading', { name: 'Completed' })
     await page.getByText('[Example] New keycard for Daniela V')
+    // Confirm tags: High priority, Low effort, New hardware, and Done.
     await page.getByText('High priorityLow effortNew hardwareDone');
 });
 
