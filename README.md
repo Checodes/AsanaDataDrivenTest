@@ -10,7 +10,8 @@ Introduction: The purpose of this project was to develop test cases driven by JS
 
 Implementation Details: How you tackled the task and the main components of your
 implementation.
-    - Systematic Approach
+
+  - Systematic Approach
           - Test Preparation: Defined test cases in JSON format.Each test case included                 unique identifiers and data for test execution (left navigation items, card                 titles, associated tags, and target columns). 
           - Test Framework: Used Playwright testing framework
           - Test Suite: Structured the suite to include a login test and individual data-                driven test cases.
