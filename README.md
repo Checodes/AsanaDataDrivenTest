@@ -2,13 +2,13 @@
 Data-driven test to validate Asana functionality
 
 
-Introduction: The purpose of this project was to develop test cases driven by JSON data, validate specific elements on the specific project folders and perform specific tasks on Asana’s login page.
+1. Introduction: The purpose of this project was to develop test cases driven by JSON data, validate specific elements on the specific project folders and perform specific tasks on Asana’s login page.
   
     
 (My thought process: When creating tests for unfamiliar websites, I start  out with the simplest, most descriptive way to test the page. This allows me to understand basic functionality and interactions of the page. You will notice that I created three separate tests and with each test, it becomes more concise. Tests from longest to shortest are asanatest.spec.js , ananadatadriven.spec.js, asanadatadriven2.spec.js)
 
 
-Implementation Details: How you tackled the task and the main components of your
+2. Implementation Details: How you tackled the task and the main components of your
 implementation.
 
   - Systematic Approach
@@ -18,7 +18,7 @@ implementation.
           - Test Automation: For each data-driven test case we navigated to the specified               left navigation items; Validated the presence of card titles in their                        designated columns; and verified the display of associated tags for each card. 
 
 
-Challenges and Solutions: Mention any obstacles encountered and your solutions.
+3. Challenges and Solutions: Mention any obstacles encountered and your solutions.
     - Challenge #1: Little experience creating data-driven automation tests i
     Solution#1: I utilized youtube and LinkedIn learning for some guidance.
   
@@ -30,13 +30,13 @@ Challenges and Solutions: Mention any obstacles encountered and your solutions.
     Solution #3: split and iterated through these items clicking on each on to ensure            accurate navigation.
 
 
-Results: Conclude with the outcomes of the test runs, detailing any failures.
+4. Results: Conclude with the outcomes of the test runs, detailing any failures.
     -  All test cases passed (finally)
     -  Initially, I had issues with the login tests because getByRole, getByLabel, and             getById were not available contrary to what the record and playback displayed. Once
        I used locator(), I had no further issues. (Line 68 in asanadatadriven2.spec.js)
 
 
-Recommendations: 
+5. Recommendations: 
     -  Expand test coverage for different environments
     -  Continuous testing: implement CI/CD pipelines to automation execution on a regular          basis to ensure new code changes does not introduce regressions
 
