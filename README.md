@@ -3,7 +3,10 @@ Data-driven test to validate Asana functionality
 
 
 Introduction: The purpose of this project was to develop test cases driven by JSON data, validate specific elements on the specific project folders and perform specific tasks on Asana’s login page.
-    (My thought process: When creating tests for unfamiliar websites, I start out with the simplest, most descriptive way to test the page. This allows me to understand basic functionality and interactions of the page. You will notice that I created three separate tests and with each test, it becomes more concise. Tests from longest to shortest are asanatest.spec.js , ananadatadriven.spec.js, asanadatadriven2.spec.js)
+  
+    
+(My thought process: When creating tests for unfamiliar websites, I start  out with the simplest, most descriptive way to test the page. This allows me to understand basic functionality and interactions of the page. You will notice that I created three separate tests and with each test, it becomes more concise. Tests from longest to shortest are asanatest.spec.js , ananadatadriven.spec.js, asanadatadriven2.spec.js)
+
 
 Implementation Details: How you tackled the task and the main components of your
 implementation.
