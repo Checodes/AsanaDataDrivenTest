@@ -36,8 +36,9 @@ implementation.
        I used locator(), I had no further issues. (Line 68 in asanadatadriven2.spec.js)
 
 
-5. Recommendations: 
+5. Recommendations: (From an automation POV)
     -  Expand test coverage for different environments
     -  Continuous testing: implement CI/CD pipelines to automation execution on a regular          basis to ensure new code changes does not introduce regressions
-
+    -  I could have missed it but if Asana had page.getByPlaceholder incorporated into it's
+       UI, writing autometion tests can be developed faster. 
 
