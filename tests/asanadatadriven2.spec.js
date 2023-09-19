@@ -1,3 +1,6 @@
+// asanadatadriven2 was created to make the test more maintainable and readable
+// Depending on the client, this may be preferred
+
 const { test, expect } = require('@playwright/test');
 
 // Test data in JSON format
