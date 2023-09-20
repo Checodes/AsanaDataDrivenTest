@@ -76,7 +76,7 @@ const testCases = [
 // Click Log in 
     await page.locator("Log in") // (Used page.locator since getByRole, getByLabel, and getById not available)
 
-// Validate login you are on log in oage by fining by finding the Home button
+ // Validate login you are on log in page by finding the Home button
     await page.getByLabel ("Home")
 })
 
