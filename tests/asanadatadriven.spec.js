@@ -60,18 +60,24 @@ const testCases = [
 test("Asana Login Test",async function({page})
 
 {
-// Go to login page
+
+  // Go to login page
     await page.goto ("https://app.asana.com/-/login")
-// Enter email address
+
+  // Enter email address
     await page.getByLabel ('Email address').fill ('ben+pose@workwithloop.com');
-// Find continue then click
+
+  // Find continue then click
     await page.getByRole ("button", {name: "Continue", exact: true}).click()
-// Enter password
+
+  // Enter password
     await page.locator ('#lui_4').fill ('Password123');
-// Click Log in 
+
+  // Click Log in 
     await page.locator("Log in") // (Used page.locator since getByRole, getByLabel, and getById not available)
-// Validate login you are on log in oage by fining by finding the Home button
-    await page.getByLabel ("Home")
+
+  // Validate login you are on log in page by finding the Home button
+     await page.getByLabel ("Home")
 })
 
  // Loop through testCases and create a test for each case
